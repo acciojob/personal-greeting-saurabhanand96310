@@ -10,7 +10,7 @@ const handle=(e)=>{
 }
 
   return <>
-       <p>Enter your name:</p>
+       <p></p>
        <input  type="text" value={greet} onChange={handle}></input>
        {greet && <p>Hello {greet}</p>}
   </>
