@@ -1,23 +1,16 @@
+import React from 'react';
 
-import React, { useState} from "react";
+import Greeting from './Greeting';
+
 import './../styles/App.css';
 
-const App = () => {
- const [input,setInput]=useState("");
 
- const handleInput =(event)=>{
-setInput(event.target.value);
- }
+
+const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <p >Enter your name:</p>
-        <input type="text" value={input}  onChange={handleInput}></input>
-
-
-        {/* <input value={value} id="name" onChange={e => setInput(e.target.value)} type={type} />
-        <p>Hello { input}</p> */}
-       { input &&<p>Hello {input}</p>}
+       <Greeting></Greeting>
     </div>
   )
 }
