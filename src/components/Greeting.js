@@ -12,7 +12,7 @@ const handle=(e)=>{
   return <>
        <p></p>
        <input  type="text" value={greet} onChange={handle}></input>
-       {greet && <p>Hello {greet}</p>}
+       {greet && <p>Hello {greet}!</p>}
   </>
 
 
